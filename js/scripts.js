@@ -116,7 +116,7 @@ masks.forEach(mask => {
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: mask,
-      toggleActions: "restart none none reset",
+      toggleActions: "play none none none",
       start: "top 80%",
       //markers:true
     }
@@ -153,7 +153,7 @@ textos.forEach(text => {
     duration: 1,
     scrollTrigger: {
       trigger: text,
-      toggleActions: "restart none none reverse",
+      toggleActions: "play none none none",
       start: "top 80%",
       //markers:true
     }
