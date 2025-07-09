@@ -151,7 +151,7 @@ p.especial {
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #ffffff;
-  width: 170px;
+  width: 200px;
   padding: 15px;
   border-radius: 50px;
   margin: auto;
@@ -1660,7 +1660,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   .preferencia .left {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 }
 
@@ -1993,6 +1993,7 @@ body {
           justify-content: center;
 }
 
+
 @media screen and (max-width: 1200px) {
   .pasos {
     padding: 0;
@@ -2018,11 +2019,18 @@ body {
   margin-bottom: 25px;
 }
 
+.pasos b {
+  color: white !important;
+  font-family: museo500;
+  font-size: 2.5rem;
+}
+
 .consumidores3 {
   margin-top: -150px;
   width: 100%;
   padding-left: 5.55556%;
   padding-right: 5.55556%;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -2640,5 +2648,10 @@ footer .redes .red svg:hover path {
 .anim-cont .anim-title {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
+}
+
+.aire{
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=app.css.map */

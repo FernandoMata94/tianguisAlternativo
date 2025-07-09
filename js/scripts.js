@@ -5,7 +5,7 @@ $('.slider-cont').slick({
   fade: true,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 8000,
   pauseOnHover: false
 });
 
@@ -16,7 +16,7 @@ $('.slider-prod').slick({
   fade: true,
   arrows: true,
   autoplay: false,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 8000,
   pauseOnHover: false
 });
 
@@ -207,3 +207,24 @@ gsap.from('.width', {
     //markers:true
   }
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+  const fechaInicio = new Date(2007, 6, 1);
+  const hoy = new Date();
+
+  let anios = hoy.getFullYear() - fechaInicio.getFullYear();
+
+  const aunNoEsAniversario = (
+      hoy.getMonth() < fechaInicio.getMonth() ||
+      (hoy.getMonth() === fechaInicio.getMonth() && hoy.getDate() < fechaInicio.getDate())
+  );
+
+  if (aunNoEsAniversario) {
+      anios--;
+  }
+
+  const aniosProyectoElement = document.getElementById("anios-proyecto");
+  if (aniosProyectoElement) {
+      aniosProyectoElement.textContent = anios;
+  }
+});
